@@ -6,6 +6,7 @@
 	
 	<s:VGroup width="100%" height="100%" gap="0" horizontalAlign="center" verticalAlign="middle">
 		<s:Label text="あっ"/>
+		<s:Label text="あっ"/>
 	</s:VGroup>
 	
 </s:WindowedApplication>
