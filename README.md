@@ -1,3 +1,8 @@
 # public1_repository
 
-ﾈｺと和解せよ
+ﾈｺ
+と
+和
+解
+せ
+よ
