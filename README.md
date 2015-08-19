@@ -1,3 +1,3 @@
 # public1_repository
 
-ﾈｺと和解せよ
+# ﾈｺと和解せよ
