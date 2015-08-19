@@ -1,14 +1,18 @@
-##統合スキーマ(取引周辺)
+###統合スキーマ案(取引周辺)
 
-###中間モデル使用パターン
+債権債務が関係する全てを把握したい
+#####案1 (中間モデル使用パターン)
 
 ![画像1](std_model_dealing00.png)
 
-https://cacoo.com/diagrams/i1ZUBPtJ7NFWqlMA#672B4
+「整備見積、車販売上、リース売上」を「売上」で「部品仕入、外注、車両仕入」を「仕入」でのような中間モデルを使った集計が可能ですがリレーションの把握が難しいかもしれません
+https://cacoo.com/diagrams/i1ZUBPtJ7NFWqlMA#672B4 (まだ共有設定はしていません)
 
 
-###中間モデル未使用パターン
+
+#####案2 (中間モデル未使用パターン)
 
 ![画像2](std_model_dealing01.png)
 
-https://cacoo.com/diagrams/i1ZUBPtJ7NFWqlMA#DA9C2
+構造は(案1よりもリレーションも含めて比較的シンプルになりますが全ての売上だけの集計、全ての仕入だけの集計の際に手間が掛かります
+https://cacoo.com/diagrams/i1ZUBPtJ7NFWqlMA#DA9C2 (まだ共有設定はしていません)
