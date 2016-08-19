@@ -98,10 +98,10 @@ getter/setterのfooのストレージ変数には、_fooという名前を付け
 
 小文字で綴りを開始し、以後の連語をキャメルケース方式で記述します。<br>例: `measure()、updateDisplayList()`<br>メソッド名には必ず動詞を使用するようにします。
 一般的に、パラメータのないメソッドにはgetFooBar()やsetFooBar()といった名前を付けるのではなく、getter/setterとして実装するようにします。 ただし、getFooBar()が大量の演算処理を必要とする「重い」メソッドである場合は、この特徴が明らかになるよう、getterである代わりに、findFooBar()、calculateFooBar()、determineFooBar()といった名前を付けるようにします。<br>クラスがメソッドをオーバーライドし、ベースメソッドを公開し続けたいような場合は、ベース名の頭に「$」が付いた同名のメソッドを実装することで、これが可能になります。 <br>この場合、当該メソッドにはfinalの印を付け、superメソッドの呼び出し以外の機能を含めないようにします。<br><br>
-mx_internal final function $addChild(child:DisplayObject):DisplayObject
-{
-    return super.addChild(child);
-}
+mx_internal final function $addChild(child:DisplayObject):DisplayObject<br>
+{<br>
+　　return super.addChild(child);<br>
+}<br>
 
 #### インベントハンドラ名
 
@@ -113,11 +113,11 @@ mx_internal final function $addChild(child:DisplayObject):DisplayObject
 #### 引数名
 
 各setterの引数には、valueを使用します。<br>
-正しい記述例:`public function set label(value:String):void`
-謝った記述例:`public function set label(lab:String):void`
-謝った記述例:`public function set label(val:String):void`
+正しい記述例:`public function set label(value:String):void`<br>
+謝った記述例:`public function set label(lab:String):void`<br>
+謝った記述例:`public function set label(val:String):void`<br>
 
-各イベントハンドラの引数には、（e、evtおよびeventObjではなく）eventを使用します。
+各イベントハンドラの引数には、（e、evtおよびeventObjではなく）eventを使用します。<br>
 例:`protected function set mouseDwonHandler(event:Event):void`
 
 ####リソールバンドル名
@@ -127,8 +127,6 @@ mx_internal final function $addChild(child:DisplayObject):DisplayObject
 #### リソースキー名
 
 小文字で綴りを開始し、以後の連語をキャメルケース方式で記述します。<br>例: `pm、dayNamesShort`
-
-<br>
-参考URL
-	http://www.trick7.com/blog/2008/03/14-131809.php
-    https://sourceforge.net/adobe/flexsdk/wiki/Coding%20Conventions-ja/
+<br>参考URL<br>
+http://www.trick7.com/blog/2008/03/14-131809.php
+https://sourceforge.net/adobe/flexsdk/wiki/Coding%20Conventions-ja/
