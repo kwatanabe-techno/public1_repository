@@ -32,7 +32,7 @@
 
 #### パッケージ名
 
-小文字で綴りを開始し、以後の連語はキャメルケース方式で記述します。<br>例: `controls、listClasses`<br>パッケージの名前には、常に、動詞、形容詞または副詞ではなく、名詞または動名詞（動詞に-ingが付いた形）を使用するようにします。<br>同様のアイテムを複数実装するようなパッケージの場合は、そのアイテムを複数形で示す名前を付けるようにします。<br>例: `charts、collections、containers、controls、effects、events、formatters、managers、preloaders、resources、skins、states、styles、utils、validators`など。
+小文字で綴りを開始し、以後の連語はキャメルケース方式で記述します。<br>例: `controls、listClasses`<br>パッケージの名前には、常に、動詞、形容詞または副詞ではなく、名詞または動名詞（動詞に-ingが付いた形）を使用するようにします。<br>同様のアイテムを複数実装するようなパッケージの場合は、そのアイテムを複数形で示す名前を付けるようにします。<br>例: `charts、collections、containers、controls、effects、events、formatters、managers、preloaders、resources、skins、states、styles、utils、validators`など。<br>
 特定の概念を実装するパッケージの名前には、動名詞を使用することが一般的です。<br>例: `binding、logging、messaging、printing` 以外の場面では、その「概念の名詞」を使用します。例: `accessibility、core、graphics、rpc`など。
 FooBarコンポーネントをサポートするクラス群が含まれたパッケージであれば、fooBarClassesと名付けるようにします。
 
@@ -71,18 +71,18 @@ FooBarコンポーネントをサポートするクラス群が含まれたパ�
 #### プロパティ名(変数及びgetter/setter)
 
 小文字で綴りを開始し、以後の連語をキャメルケース方式で記述します。<br>例: `i、width、numChildren`<br>ループのインデックスにはi、上限値にはnをそれぞれ使用します。 内部ループのインデックスにはj、上限値にはmをそれぞれ使用します。<br>
-for (var i:int = 0; i < n; i++)
-{
-    for (var j:int = 0; j < m; j++)
-    {
-        ...
-    }
-}
+for (var i:int = 0; i < n; i++)<br>
+{<br>
+　for (var j:int = 0; j < m; j++)<br>
+　{<br>
+　　　...<br>
+　}<br>
+}<br>
 <br>for-inループの変数には、p（プロパティの頭文字）を使用します。<br>
-for (var p:String in o)
-{
-    ...
-}
+for (var p:String in o)<br>
+{<br>
+　...<br>
+}<br>
 
 #### ストレージ変数名
 
@@ -105,7 +105,7 @@ mx_internal final function $addChild(child:DisplayObject):DisplayObject<br>
 
 #### インベントハンドラ名
 
-イベントハンドラには、イベントの種類を示す語句に「Handler」を結合した名前を付けます(HandlerをHに省略も可)。<br>例: `mouseDownHandler() mouseDownH()`
+イベントハンドラには、イベントの種類を示す語句に「Handler」を結合した名前を付けます(HandlerをHに省略も可)。<br>例: `mouseDownHandler() mouseDownH()`<br>
 仮にハンドラが、サブコンポーネント（this以外のものなど）によってディスパッチされるイベント用のものである場合は、ハンドラ名の前にサブコンポーネント名を付け、これらをアンダースコアで結合します。
 <br>例: `textInput_focusInHandler() textInput_focusInH()`<br>
 
@@ -126,7 +126,7 @@ mx_internal final function $addChild(child:DisplayObject):DisplayObject<br>
 
 #### リソースキー名
 
-小文字で綴りを開始し、以後の連語をキャメルケース方式で記述します。<br>例: `pm、dayNamesShort`
+小文字で綴りを開始し、以後の連語をキャメルケース方式で記述します。<br>例: `pm、dayNamesShort`<br>
 <br>参考URL<br>
 http://www.trick7.com/blog/2008/03/14-131809.php
 https://sourceforge.net/adobe/flexsdk/wiki/Coding%20Conventions-ja/
