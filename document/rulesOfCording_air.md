@@ -71,16 +71,13 @@ FooBarコンポーネントをサポートするクラス群が含まれたパ�
 #### プロパティ名(変数及びgetter/setter)
 
 小文字で綴りを開始し、以後の連語をキャメルケース方式で記述します。<br>例: `i、width、numChildren`<br>ループのインデックスにはi、上限値にはnをそれぞれ使用します。 内部ループのインデックスにはj、上限値にはmをそれぞれ使用します。<br>
-for (var i:int = 0; i < n; i++)<br>
-{<br>
-　for (var j:int = 0; j < m; j++)<br>
-　{<br>
+for (var i:int = 0; i < n; i++){<br>
+　for (var j:int = 0; j < m; j++){<br>
 　　　...<br>
 　}<br>
 }<br>
 <br>for-inループの変数には、p（プロパティの頭文字）を使用します。<br>
-for (var p:String in o)<br>
-{<br>
+for (var p:String in o){<br>
 　...<br>
 }<br>
 
