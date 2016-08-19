@@ -32,7 +32,7 @@
 
 #### パッケージ名
 
-小文字で綴りを開始し、以後の連語はキャメルケース方式で記述します。<br>例: `controls、listClasses`<br>パッケージの名前には、常に、動詞、形容詞または副詞ではなく、名詞または動名詞（動詞に-ingが付いた形）を使用するようにします。<br>同様のアイテムを複数実装するようなパッケージの場合は、そのアイテムを複数形で示す名前を付けるようにします。<br>例: `charts、collections、containers、controls、effects、events、formatters、managers、preloaders、resources、skins、states、styles、utils、validators`<br><br>特定の概念を実装するパッケージの名前には、動名詞を使用することが一般的です。<br>例: `binding、logging、messaging、printing` <br><br>以外の場面では、その「概念の名詞」を使用します。<br>例: `accessibility、core、graphics、rpc`<br><br>FooBarコンポーネントをサポートするクラス群が含まれたパッケージであれば、fooBarClassesと名付けるようにします。
+小文字で綴りを開始し、以後の連語はキャメルケース方式で記述します。<br>例: `controls、listClasses`<br><br>パッケージの名前には、常に、動詞、形容詞または副詞ではなく、名詞または動名詞（動詞に-ingが付いた形）を使用するようにします。同様のアイテムを複数実装するようなパッケージの場合は、そのアイテムを複数形で示す名前を付けるようにします。<br>例: `charts、collections、containers、controls、effects、events、formatters、managers、preloaders、resources、skins、states、styles、utils、validators`<br><br>特定の概念を実装するパッケージの名前には、動名詞を使用することが一般的です。<br>例: `binding、logging、messaging、printing` <br><br>以外の場面では、その「概念の名詞」を使用します。<br>例: `accessibility、core、graphics、rpc`<br><br>FooBarコンポーネントをサポートするクラス群が含まれたパッケージであれば、fooBarClassesと名付けるようにします。
 
 #### ファイル名
 
@@ -86,8 +86,7 @@ getter/setterのfooのストレージ変数には、_fooという名前を付け
 
 #### 定数名
 
-すべて大文字で綴り、各単語間にアンダースコアを挿入します。<br>例: `OFF、DEFAULT_WIDTH`
-定数の値がString型の場合は、必ず識別子内の単語を定数の値の単語と一致させます。
+すべて大文字で綴り、各単語間にアンダースコアを挿入します。<br>例: `OFF、DEFAULT_WIDTH`<br>定数の値がString型の場合は、必ず識別子内の単語を定数の値の単語と一致させます。
 
 #### メソッド名
 
